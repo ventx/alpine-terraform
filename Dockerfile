@@ -1,4 +1,4 @@
-FROM ventx/alpine-base
+FROM ventx/alpine
 
 ENV GLIBC 2.25-r0
 ENV TERRAFORM_VERSION 0.9.8
