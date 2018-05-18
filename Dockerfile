@@ -1,7 +1,7 @@
 FROM ventx/alpine
 
 ENV GLIBC 2.25-r0
-ENV TERRAFORM_VERSION 0.11.3
+ENV TERRAFORM_VERSION 0.11.7
 
 RUN curl -L https://raw.githubusercontent.com/sgerrand/alpine-pkg-glibc/master/sgerrand.rsa.pub -o /etc/apk/keys/sgerrand.rsa.pub && \
     curl -L https://github.com/sgerrand/alpine-pkg-glibc/releases/download/${GLIBC}/glibc-${GLIBC}.apk -o glibc-${GLIBC}.apk && \
