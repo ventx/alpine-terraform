@@ -13,10 +13,7 @@ RUN cd /usr/local/bin && \
     unzip terraform_${TERRAFORM_VERSION}_linux_amd64.zip && \
     rm terraform_${TERRAFORM_VERSION}_linux_amd64.zip
 
-RUN apk --update add git openssh-client python py-pip && \
-  rm -rf /var/cache/apk/*
-
-RUN pip install awscli
+RUN apk --update --no-cache add git openssh-client python py-pip python3 && pip install awscli
 
 WORKDIR /work
 
