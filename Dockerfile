@@ -1,6 +1,6 @@
 FROM ventx/alpine
 
-ENV TERRAFORM_VERSION 0.12.7
+ENV TERRAFORM_VERSION 0.12.8
 
 RUN apk --update --no-cache add libc6-compat git openssh-client python py-pip python3 && pip install awscli
 
